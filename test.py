@@ -22,8 +22,6 @@ def possibilities(board):
 				l.append((i, j))
 	return(l)
 
-# Select a random place for the player
-
 
 def random_place(board, player):
 	selection = possibilities(board)
@@ -112,4 +110,5 @@ def play_game():
 			if winner != 0:
 				break
 	return(winner)
+	
 print("Winner is: " + str(play_game()))
